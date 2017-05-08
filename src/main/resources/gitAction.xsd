@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                 xmlns:git="uri:custom:git-action:0.1"
+     elementFormDefault="qualified"
+     targetNamespace="uri:custom:git-action:0.1">
+<xs:complexType name="GIT">
+       <xs:sequence>
+                 <xs:element name="repository" type="xs:string" />
+                 <xs:element name="hdfsPath" type="xs:string" />
+       </xs:sequence>
+</xs:complexType>
+<xs:element name="git" type="git:GIT"></xs:element>
+</xs:schema>
